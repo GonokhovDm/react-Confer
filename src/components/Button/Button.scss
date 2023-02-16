@@ -1,0 +1,31 @@
+button {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 12px 25px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500 !important;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	background: rgb(223, 66, 177);
+	background: linear-gradient(130deg, rgba(223, 66, 177, 1) 5%, rgba(115, 75, 187, 1) 95%);
+	transition: all .7s ease-in-out;
+
+	&:hover {
+		box-shadow: inset 600px 0 0 0 #fff;
+		color: #222;
+
+		svg {
+			fill: #222;
+		}
+	}
+
+	svg {
+		width: 15px;
+		height: 15px;
+		margin-left: 10px;
+		transition: all .7s ease-in-out;
+	}
+}
