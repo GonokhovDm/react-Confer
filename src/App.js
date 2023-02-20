@@ -1,9 +1,9 @@
 import React from "react";
+
 import Navbar from "./components/Navbar";
 import PersonCard from "./components/Person-card";
 import Button from "./components/Button";
-
-	// {firstName: "Patricia", lastName: "Stanley", title: "Product Lead", photo: './assets/photo-1.jpg'}
+import Schedule from "./components/Schedule";
 
 function App() {
 	return (
@@ -20,7 +20,7 @@ function App() {
 							<div className="underlined"></div>
 							<span className="welcome__title">Conference</span>
 							<p>Shangri-la hotel, bangkok, bangkok, thailand</p>
-							<Button title="More information"/>
+							<Button title="More information" />
 						</div>
 					</div>
 				</div>
@@ -36,7 +36,7 @@ function App() {
 											<h4>about conference</h4>
 											<h2>WELCOME TO THE PROJECT MANAGEMENT</h2>
 											<p>The Project Management is a platform to learn expert techniques for building successful project teams, creating efficient plans and implementing effective tracking measures to ensure your projects come in on deadline and on budget. In one fast-paced, well-designed day, we’ll cover all the essential elements of project management.</p>
-											<Button title="Intrested"/>
+											<Button title="Intrested" />
 										</div>
 									</div>
 
@@ -61,34 +61,37 @@ function App() {
 
 							<div className="row g-5">
 								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Albert Barnes" title="Founder" imageUrl="./img/photo-2.jpg"/>
+									<PersonCard name="Albert Barnes" title="Founder" imageUrl="./img/photo-2.jpg" />
 								</div>
 								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Patricia Stanley" title="Product Lead" imageUrl="./img/photo-1.jpg"/>
+									<PersonCard name="Patricia Stanley" title="Product Lead" imageUrl="./img/photo-1.jpg" />
 								</div>
 								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Evelyn Stone" title="Photographer" imageUrl="./img/photo-3.jpg"/>
+									<PersonCard name="Evelyn Stone" title="Photographer" imageUrl="./img/photo-3.jpg" />
 								</div>
 								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Evelyn Stone" title="Photographer" imageUrl="./img/photo-4.jpg"/>
+									<PersonCard name="Evelyn Stone" title="Photographer" imageUrl="./img/photo-4.jpg" />
 								</div>
 								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Susan Hopkins" title="UX Manager" imageUrl="./img/photo-5.jpg"/>
+									<PersonCard name="Susan Hopkins" title="UX Manager" imageUrl="./img/photo-5.jpg" />
 								</div>
 								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Michael Fowler" title="Product Designer" imageUrl="./img/photo-6.jpg"/>
+									<PersonCard name="Michael Fowler" title="Product Designer" imageUrl="./img/photo-6.jpg" />
 								</div>
 							</div>
 
-							<a href="#">View all speaker</a>
+							<a href="/">View all speaker</a>
 						</div>
-						
-						
 					</div>
+				</section>
 
+				<section className="schedule-area jc-center">
+					<div className="container">
+						<Schedule />
+					</div>
 				</section>
 			</main>
-		</div>
+		</div >
 	);
 }
 

@@ -1,0 +1,143 @@
+$mainPink: #df42b1;
+
+.schedule {
+	width: 100%;
+
+	&__title {
+		text-align: center;
+
+		h4 {
+			color: $mainPink;
+			font-weight: 400;
+		}
+	}
+
+	&__nav {
+		margin-top: 70px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+		position: relative;
+		
+
+		ul {
+			display: flex;
+			position: relative;
+
+			.schedule__nav-item {
+				padding: 20px 40px;
+				text-align: center;
+				color: #fff;
+				background-color: #1F2371;
+				cursor: pointer;
+				transition: background .15s ease-in-out;
+
+				&:hover {
+					background: lighten($color: #1F2371, $amount: 3%);
+				}
+
+				&:nth-child(1) {
+					border-right: 1px rgba($color: #fff, $alpha: .3) solid;
+					border-radius: 10px 0 0 10px;
+				}
+
+				&:nth-child(3) {
+					border-left: 1px rgba($color: #fff, $alpha: .3) solid;
+					border-radius: 0 10px 10px 0;
+				}
+
+				&.active {
+					background: #5D5E8D;
+				}
+
+				span {
+					text-transform: uppercase;
+					font-size: 18px;
+					font-weight: 600;
+					letter-spacing: 1px;
+				}
+
+				p {
+					margin: 0;
+					font-size: 14px;
+					font-weight: 500;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+
+	&__list {
+		width: 100%;
+		display: block;
+		transition: all 1s ease-in-out;
+
+
+		&-item {
+			border: 1px rgba($color: #fff, $alpha: .2) solid;
+			border-radius: 10px;
+			padding: 30px;
+			display: flex;
+			transition: border-color .3s ease-in-out;
+			margin-top: 20px;
+
+			&:hover {
+				border-color: #df42b1;
+			}
+		}
+
+
+	}
+
+	&__left-side {
+		display: flex;
+		align-items: center;
+		max-width: 42%;
+		width: 42%;
+		padding-right: 15px;
+
+		img {
+			width: 90px;
+			height: 90px;
+			border-radius: 100px;
+		}
+
+		&-text {
+			margin-left: 20px;
+
+			p {
+				color: #9293bc;
+
+				span {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&__right-side {
+		max-width: 58%;
+		width: 58%;
+		display: flex;
+		align-items: center;
+
+		&-date {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+
+			p {
+				color: #fff;
+				display: flex;
+				align-items: center;
+
+				svg {
+					width: 15px;
+					height: 15px;
+					fill: $mainPink;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
