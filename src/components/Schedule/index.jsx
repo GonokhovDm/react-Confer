@@ -131,6 +131,10 @@ class CheduleTabs extends Component {
 						/>
 					</div>
 				} 
+
+				<div className="schedule__download-btn">
+					<a href="/">Download schedule (PDF)</a>
+				</div>
 			</div>
 		)
 	}
