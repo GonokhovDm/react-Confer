@@ -5,6 +5,7 @@ import PersonCard from "./components/Person-card";
 import Button from "./components/Button";
 import Schedule from "./components/Schedule";
 import Price from "./components/Price";
+import Partners from "./components/Partners"
 
 function App() {
 	return (
@@ -95,6 +96,12 @@ function App() {
 				<section className="price-area">
 					<div className="container">
 						<Price />
+					</div>
+				</section>
+
+				<section className="partners-area">
+					<div className="container">
+						<Partners />
 					</div>
 				</section>
 			</main>
