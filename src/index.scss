@@ -28,6 +28,7 @@ h4 {
 }
 
 h6 {
+	text-transform: uppercase;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 600;
@@ -230,6 +231,34 @@ p {
 	padding: 100px 0 60px 0;
 
 	.container {
+		justify-content: center;
+	}
+}
+
+.price-area {
+	position: relative;
+	padding: 100px 0 60px 0;
+	background-image: url(./assets/3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgb(223, 66, 177);
+		background: linear-gradient(130deg, rgba(223, 66, 177, 1) 5%, rgba(115, 75, 187, 1) 95%);
+		z-index: -1;
+		opacity: .9;
+	}
+
+	.container {
+		display: flex;
 		justify-content: center;
 	}
 }

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import PersonCard from "./components/Person-card";
 import Button from "./components/Button";
 import Schedule from "./components/Schedule";
+import Price from "./components/Price";
 
 function App() {
 	return (
@@ -88,6 +89,12 @@ function App() {
 				<section className="schedule-area jc-center">
 					<div className="container">
 						<Schedule />
+					</div>
+				</section>
+
+				<section className="price-area">
+					<div className="container">
+						<Price />
 					</div>
 				</section>
 			</main>
