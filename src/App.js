@@ -6,6 +6,12 @@ import Button from "./components/Button";
 import Schedule from "./components/Schedule";
 import Price from "./components/Price";
 import Partners from "./components/Partners"
+import News from "./components/News";
+import ContactForm from "./components/contact-form";
+import Footer from "./components/Footer";
+
+
+
 
 function App() {
 	return (
@@ -104,6 +110,47 @@ function App() {
 						<Partners />
 					</div>
 				</section>
+
+				<section className="news-area">
+					<div className="container">
+						<News/>
+					</div>
+				</section>
+
+				<section className="contact">
+					<div className="container">
+						<h4>Have question?</h4>
+						<h2>Contact us</h2>
+						<div className="row">
+							<div className="col-12 col-lg-4">
+								<div className="contact__info">
+									<div className="contact__info-row">
+										Address :
+										<span>184 Main Collins Street</span>
+									</div>
+									<div className="contact__info-row">
+										Phone :
+										<span>{'(226) 446 9371'}</span>
+									</div>
+									<div className="contact__info-row">
+										Email:
+										<span>confer@gmail.com</span>
+									</div>
+									<div className="contact__info-row">
+										Website:
+										<span>www.confer.com</span>
+									</div>
+								</div>
+							</div>
+							<div className="col-12 col-lg-8">
+								<ContactForm/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<Footer/>
+				
 			</main>
 		</div >
 	);
