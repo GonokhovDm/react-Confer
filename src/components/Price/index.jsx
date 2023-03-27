@@ -12,7 +12,7 @@ function Price() {
 		{
 			id: 1,
 			title: '1 day pass',
-			imageUrl: 'price-card-1.png' ,
+			imageUrl: 'price-card-1.png',
 			price: '59'
 		},
 		{
@@ -25,7 +25,7 @@ function Price() {
 			id: 3,
 			title: 'group pass',
 			imageUrl: 'price-card-3.png',
-			price: '199',
+			price: '199'
 		}
 	]
 
@@ -35,11 +35,11 @@ function Price() {
 				<h4>Choose a ticket</h4>
 				<h2>Ticket pricing</h2>
 			</div>
-					<PriceCard
-						PriceObj={PriceObj}
-						isActivePrice={isActivePrice}
-						setIsActivePrice={setIsActivePrice}
-					/>
+			<PriceCard
+				PriceObj={PriceObj}
+				isActivePrice={isActivePrice}
+				setIsActivePrice={setIsActivePrice}
+			/>
 		</div>
 	)
 }
