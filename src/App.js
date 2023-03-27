@@ -113,7 +113,7 @@ function App() {
 
 				<section className="news-area">
 					<div className="container">
-						<News/>
+						<News />
 					</div>
 				</section>
 
@@ -143,14 +143,14 @@ function App() {
 								</div>
 							</div>
 							<div className="col-12 col-lg-8">
-								<ContactForm/>
+								<ContactForm />
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<Footer/>
-				
+				<Footer />
+
 			</main>
 		</div >
 	);

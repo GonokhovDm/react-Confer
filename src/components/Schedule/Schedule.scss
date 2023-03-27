@@ -18,7 +18,7 @@ $mainPink: #df42b1;
 		justify-content: center;
 		margin-bottom: 30px;
 		position: relative;
-		
+
 
 		ul {
 			display: flex;
@@ -157,10 +157,11 @@ $mainPink: #df42b1;
 			color: #fff;
 			border: solid 3px transparent;
 			border-radius: 50px;
-  		background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(130deg, rgba(223, 66, 177, 1) 5%, rgba(115, 75, 187, 1) 95%);;
-  		background-origin: border-box;
-  		background-clip: content-box, border-box;
-  		box-shadow: 2px 1000px 1px #151853 inset;
+			background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(130deg, rgba(223, 66, 177, 1) 5%, rgba(115, 75, 187, 1) 95%);
+			;
+			background-origin: border-box;
+			background-clip: content-box, border-box;
+			box-shadow: 2px 1000px 1px #151853 inset;
 			transition: box-shadow .15s ease-in-out;
 
 			&:hover {
