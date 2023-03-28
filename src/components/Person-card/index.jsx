@@ -8,23 +8,23 @@ import linkedinSvg from '../../assets/linkedin.svg';
 import './PersonCard.scss'
 
 function PersonCard(props) {
-  return (
-    <div className="speakings__card">
-      <div className="speakings__card-photo">
-        <img src={props.imageUrl} alt="" />
-      </div>
+	return (
+		<div className="speakings__card">
+			<div className="speakings__card-photo">
+				<img src={props.imageUrl} alt="" />
+			</div>
 			<div className="speakings__card-contacts">
-        <img src={fbSvg} alt="" />
-        <img src={instSvg} alt="" />
-        <img src={twitterSvg} alt="" />
-        <img src={linkedinSvg} alt="" />
-      </div>
+				<img src={fbSvg} alt="facebook" />
+				<img src={instSvg} alt="instagram" />
+				<img src={twitterSvg} alt="twitter" />
+				<img src={linkedinSvg} alt="likedin" />
+			</div>
 			<div className="speakings__card-info">
 				<span>{props.name}</span>
 				<p>{props.title}</p>
 			</div>
 		</div>
-  )
+	)
 }
 
 export default PersonCard
