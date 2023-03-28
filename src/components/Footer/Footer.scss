@@ -7,18 +7,25 @@ footer {
 .footer-col {
 	padding: 0 15px;
 
-	&__title {
-		font-size: 26px;
-		font-weight: 600;
-		letter-spacing: 3px;
-		cursor: pointer;
-		color: #fff;
-		margin-bottom: 30px;
-	}
+	&__logo {
+		display: flex;
+		margin-bottom: 25px;
 
-	span {
-		font-size: 20px;
-		font-weight: 600;
+		svg {
+			fill: url(#MyGradient);
+			stroke: url(#MyGradient);
+			stroke-width: 25px;
+			width: 26px;
+			margin-right: 10px;
+		}
+
+		span {
+			font-size: 26px;
+			font-weight: 600;
+			letter-spacing: 3px;
+			cursor: pointer;
+			color: #fff;
+		}
 	}
 
 	p {

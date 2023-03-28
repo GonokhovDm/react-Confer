@@ -45,7 +45,7 @@ $mainPink: #df42b1;
 		padding: 10px;
 		background-color: $mainPink;
 		border-radius: 0 10px 0 10px;
-		transition: top .2s ease-in-out;
+		transition: top .8s cubic-bezier(.62, .16, .36, .85);
 
 		img {
 			width: 20px;
