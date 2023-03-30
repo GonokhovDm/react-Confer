@@ -37,13 +37,28 @@ const personList = [
 		imgUrl: "./img/photo-6.jpg",
 		name: "Michael Fowler",
 		title: "Product Designer"
+	},
+	{
+		imgUrl: "./img/photo-4.jpg",
+		name: "Evelyn Stone",
+		title: "Photographer"
+	},
+	{
+		imgUrl: "./img/photo-5.jpg",
+		name: "Susan Hopkins",
+		title: "UX Manager"
+	},
+	{
+		imgUrl: "./img/photo-6.jpg",
+		name: "Michael Fowler",
+		title: "Product Designer"
 	}
 ]
 
-function PersonCard() {
+function PersonCard({ sliceObj }) {
 	return (
 		<div className="row g-5">
-			{personList.map (item => (
+			{personList.slice(0, sliceObj).map (item => (
 				<div className="col-12 col-lg-4 col-md-6">
 					<div className="speakings__card">
 						<div className="speakings__card-photo">
