@@ -6,13 +6,13 @@ import Schedule from "../components/Schedule";
 import Price from "../components/Price";
 import Partners from "../components/Partners"
 import News from "../components/News";
-import ContactForm from "../components/contact-form";
+import ContactForm from "../components/Contact-form";
 
 function HomePage() {
   return (
     <>
     <header className="jc-center">
-				<div className="header-background"></div>
+				<div className="header-background" style={{backgroundImage: "url(./img/header-1.jpg)"}}></div>
 				<div className="container jc-space-between ai-center">
 					<div className="welcome">
 						<div className="welcome__content">
@@ -51,7 +51,7 @@ function HomePage() {
 					</div>
 				</section>
 
-				<section className="speakings-area jc-center">
+				<section className="speakings-area gradient-filter jc-center">
 					<div className="container">
 						<div className="speakings">
 							<div className="speakings__title">
@@ -59,26 +59,7 @@ function HomePage() {
 								<h2>who's speaking</h2>
 							</div>
 
-							<div className="row g-5">
-								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Albert Barnes" title="Founder" imageUrl="./img/photo-2.jpg" />
-								</div>
-								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Patricia Stanley" title="Product Lead" imageUrl="./img/photo-1.jpg" />
-								</div>
-								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Evelyn Stone" title="Photographer" imageUrl="./img/photo-3.jpg" />
-								</div>
-								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Evelyn Stone" title="Photographer" imageUrl="./img/photo-4.jpg" />
-								</div>
-								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Susan Hopkins" title="UX Manager" imageUrl="./img/photo-5.jpg" />
-								</div>
-								<div className="col-12 col-lg-4 col-md-6">
-									<PersonCard name="Michael Fowler" title="Product Designer" imageUrl="./img/photo-6.jpg" />
-								</div>
-							</div>
+							<PersonCard />
 
 							<a href="/">View all speaker</a>
 						</div>
@@ -91,7 +72,7 @@ function HomePage() {
 					</div>
 				</section>
 
-				<section className="price-area">
+				<section className="price-area gradient-filter">
 					<div className="container">
 						<Price />
 					</div>
@@ -103,7 +84,7 @@ function HomePage() {
 					</div>
 				</section>
 
-				<section className="news-area">
+				<section className="news-area gradient-filter">
 					<div className="container">
 						<News />
 					</div>
