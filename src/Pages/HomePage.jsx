@@ -9,10 +9,10 @@ import News from "../components/News";
 import ContactForm from "../components/Contact-form";
 
 function HomePage() {
-  return (
-    <>
-    <header className="jc-center">
-				<div className="header-background" style={{backgroundImage: "url(./img/header-1.jpg)"}}></div>
+	return (
+		<>
+			<header className="jc-center">
+				<div className="header-background" style={{ backgroundImage: "url(./img/header-1.jpg)" }}></div>
 				<div className="container jc-space-between ai-center">
 					<div className="welcome">
 						<div className="welcome__content">
@@ -59,7 +59,7 @@ function HomePage() {
 								<h2>who's speaking</h2>
 							</div>
 
-							<PersonCard />
+							<PersonCard sliceObj={6} />
 
 							<a href="/">View all speaker</a>
 						</div>
@@ -122,8 +122,8 @@ function HomePage() {
 					</div>
 				</section>
 			</main>
-    </>
-  )
+		</>
+	)
 }
 
 export default HomePage
