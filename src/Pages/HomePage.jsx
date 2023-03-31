@@ -86,7 +86,14 @@ function HomePage() {
 
 				<section className="news-area gradient-filter">
 					<div className="container">
-						<News />
+						<div className="news">
+							<div className="news__title">
+								<h4>Our blog</h4>
+								<h2>Latest news</h2>
+							</div>
+							<News newsSlice={3}/>
+						</div>
+						
 					</div>
 				</section>
 

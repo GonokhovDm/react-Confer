@@ -19,7 +19,7 @@ h1 {
 	align-items: center;
 }
 
-#main-speakers {
+#main-speakers, #main-blog {
 	padding: 100px 0;
 
 	.container {
@@ -31,4 +31,12 @@ h1 {
 	.mt50 {
 		margin-top: 50px;
 	}
+}
+
+#main-blog {
+	padding-bottom: 120px !important;
+}
+
+.news__cards {
+	margin: 0;
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import arrowSvg from '../../assets/button-arrow.svg';
 
 
-function NewsItem( {newsObj} ) {
+function NewsItem( {newsObj, newsSlice} ) {
 	return (
-	<div className="row gx-4">
-		{newsObj.map (item => (
+	<div className="row gx-4 gy-5">
+		{newsObj.slice(0, newsSlice).map (item => (
 			<div className="col-12 col-lg-4" key={item.imgName}>
 			<div className="news__cards-item">
 				<div className="news__cards-item-photo">
@@ -37,7 +37,7 @@ function NewsItem( {newsObj} ) {
 					</div>
 					<p>{item.text}</p>
 				</div>
-				<a href="/" className="content-link">
+				<a href="/blog" className="content-link">
 					<img src={arrowSvg} alt="" />
 				</a>
 			</div>

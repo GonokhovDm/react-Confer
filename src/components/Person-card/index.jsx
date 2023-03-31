@@ -59,7 +59,7 @@ function PersonCard({ sliceObj }) {
 	return (
 		<div className="row g-5">
 			{personList.slice(0, sliceObj).map (item => (
-				<div className="col-12 col-lg-4 col-md-6">
+				<div className="col-12 col-lg-4 col-md-6" key={item.index}>
 					<div className="speakings__card">
 						<div className="speakings__card-photo">
 							<img src={item.imgUrl} alt="" />
