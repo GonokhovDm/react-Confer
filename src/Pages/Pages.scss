@@ -19,7 +19,7 @@ h1 {
 	align-items: center;
 }
 
-#main-speakers, #main-blog {
+#main-speakers, #main-blog, #main-contact {
 	padding: 100px 0;
 
 	.container {
@@ -39,4 +39,87 @@ h1 {
 
 .news__cards {
 	margin: 0;
+}
+
+#main-contact {
+	img {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	h5 {
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: 600;
+	}
+
+	p {
+		color: #666;
+	}
+
+	.contact__form {
+		margin-top: 17px;
+		padding: 0;
+
+		input {
+			border-bottom: 1px rgba($color: #000, $alpha: .4) solid;
+			color: #333;
+
+			&:focus {
+				border-color: #000;
+			}
+
+			&::placeholder {
+				color: #999;
+			}
+		}
+
+		textarea {
+			border-bottom: 1px rgba($color: #000, $alpha: .4) solid;
+			color: #333;
+		}
+	}
+
+	.map {
+		margin-top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		ul {
+			position: relative;
+			width: 70%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #fff;
+			padding: 40px;
+			top: -70px;
+			border-radius: 10px;
+			box-shadow: 0px 8px 27px 0px rgba(90, 111, 120, 0.15);
+
+			li {
+				display: flex;
+				flex-direction: column;
+				color: #333;
+			}
+		}
+
+		a {
+			display: flex;
+			flex-direction: column;
+			color: #333;
+			transition: color .2s ease-in-out;
+
+			&:hover {
+				color: #df42b1;
+			}
+		}
+
+		svg {
+			height: 30px;
+			margin-bottom: 10px;
+			fill: url(#MyGradient);
+		}
+	}
 }
