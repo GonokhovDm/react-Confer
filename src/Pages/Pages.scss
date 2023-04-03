@@ -19,7 +19,9 @@ h1 {
 	align-items: center;
 }
 
-#main-speakers, #main-blog, #main-contact {
+#main-speakers,
+#main-blog,
+#main-contact {
 	padding: 100px 0;
 
 	.container {
@@ -124,6 +126,43 @@ h1 {
 			height: 30px;
 			margin-bottom: 10px;
 			fill: url(#MyGradient);
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.welcome {
+		&__title {
+			font-size: 60px;
+			line-height: 90px;
+		}
+
+		.underlined {
+			top: 50px;
+			width: 280px;
+		}
+	}
+
+	.about__content-right {
+		margin-top: 30px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.welcome {
+		&__title {
+			font-size: 42px;
+			line-height: 60px;
+		}
+
+		.underlined {
+			top: 30px;
+			width: 220px;
+		}
+
+		p {
+			font-size: 14px;
 		}
 	}
 }
