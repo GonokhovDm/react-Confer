@@ -35,10 +35,14 @@ h1 {
 
 #main-blog {
 	padding-bottom: 120px !important;
-}
 
-.news__cards {
-	margin: 0;
+	.news__cards {
+		margin: 0;
+
+		&-item {
+			margin-bottom: 10px;
+		}
+	}
 }
 
 #main-contact {
