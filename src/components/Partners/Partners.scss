@@ -76,3 +76,14 @@ $mainPink: #df42b1;
 		}
 	}
 }
+
+@media (max-width: 575px) {
+	.partners__feedback-item-author {
+		flex-direction: column;
+		text-align: center;
+		img {
+			margin: 0;
+			margin-bottom: 15px;
+		}
+	}
+}

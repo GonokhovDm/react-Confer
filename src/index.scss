@@ -54,11 +54,6 @@ p {
 	width: 100%;
 }
 
-.container {
-	width: 1200px;
-	display: flex;
-}
-
 .jc-space-between {
 	justify-content: space-between;
 }
@@ -93,6 +88,7 @@ p {
 
 	p {
 		text-transform: uppercase;
+		text-align: right;
 		color: #fff;
 		font-size: 18px;
 		font-weight: 600;
@@ -342,4 +338,5 @@ p {
 		max-width: 1140px;
 	}
 }
+
 

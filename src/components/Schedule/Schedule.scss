@@ -19,7 +19,6 @@ $mainPink: #df42b1;
 		margin-bottom: 30px;
 		position: relative;
 
-
 		ul {
 			display: flex;
 			position: relative;
@@ -200,6 +199,47 @@ $mainPink: #df42b1;
 
 				p:first-of-type {
 					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.schedule {
+		&__nav {
+			ul {
+				flex-direction: column;
+				width: 100%;
+				.schedule__nav-item {
+					border: none;
+					border-radius: 10px;
+					
+					&:nth-child(1) {
+						border-right: none;
+						border-radius: 10px;
+						margin-bottom: 10px;
+					}
+		
+					&:nth-child(3) {
+						border-left: none;
+						border-radius: 10px;
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+
+		&__right-side-date {
+			p {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+
+				svg {
+					height: 20px;
+					width: auto;
+					margin: 0 0 10px 0;
 				}
 			}
 		}

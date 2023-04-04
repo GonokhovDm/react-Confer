@@ -7,7 +7,7 @@ import Button from '../Button';
 
 function Navbar() {
 	
-	const [isActiveBurger, setIsActiveBurger] = useState(false);
+	const [isActiveBurger, setIsActiveBurger] = useState(true);
 
 	const burgerClick = () => {
 			setIsActiveBurger(!isActiveBurger);
