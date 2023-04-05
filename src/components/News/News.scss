@@ -133,6 +133,22 @@ $mainPink: #df42b1;
 			}
 		}
 	}
+}
 
+@media (max-width: 575px) {
+	.news__cards-item {
+		.content {
+			h6 {
+				font-size: 18px;
+			}
 
+			&-info {
+				font-size: 14px;
+
+				svg {
+					bottom: 0;
+				}
+			}
+		}
+	}
 }

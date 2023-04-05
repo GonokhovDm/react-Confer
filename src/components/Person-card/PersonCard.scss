@@ -80,15 +80,26 @@ $mainPink: #df42b1;
 
 @media (max-width: 991px) {
 	.speakings {
-		&__card-contacts {
-			top: -200px;
-	
-			img {
-				width: 25px;
-				height: 25px;
-	
-				&:not(last-of-type) {
-					margin-bottom: 12px;
+		&__card {
+			&-contacts {
+				top: -200px;
+		
+				img {
+					width: 25px;
+					height: 25px;
+		
+					&:not(last-of-type) {
+						margin-bottom: 12px;
+					}
+				}
+			}
+
+			&-info {
+				span {
+					font-size: 18px;
+				}
+				p {
+					font-size: 14px;
 				}
 			}
 		}

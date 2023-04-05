@@ -1,27 +1,35 @@
 .contact {
   &__form {
 		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		background-color: rgba($color: #fff, $alpha: .1);
 		border-radius: 10px;
 		padding: 30px;
-		div {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: 10px;
-			input {
-				width: 48%;
-				background-color: transparent;
-				border: none;
-				border-bottom: 1px rgba($color: #fff, $alpha: .4) solid;
-				padding: 10px;
-				color: #fff;
-				outline: 0;
-				transition: border-color .15s ease-in-out;
 
-				&:focus {
-					border-color: #fff;
-				}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			.row {
+				margin: 0 0 15px 0 !important;
+			}
+		}
+		input {
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px rgba($color: #fff, $alpha: .4) solid;
+			padding: 10px;
+			color: #fff;
+			outline: 0;
+			transition: border-color .15s ease-in-out;
+
+			&:focus {
+				border-color: #fff;
 			}
 		}
 
@@ -41,6 +49,16 @@
 			&:focus {
 				border-color: #fff;
 			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.contact__form {
+		padding: 15px;
+
+		input {
+			margin-bottom: 10px;
 		}
 	}
 }
