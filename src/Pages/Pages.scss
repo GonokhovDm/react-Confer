@@ -1,4 +1,4 @@
-h1 {
+.container h1 {
 	position: relative;
 	text-transform: uppercase;
 	color: #fff;
@@ -159,6 +159,39 @@ h1 {
 	}
 }
 
+#not-found {
+	width: 100vw;
+	height: 100vh;
+	background: rgb(223, 66, 177);
+	background: linear-gradient(130deg, rgba(223, 66, 177, 1) 5%, rgba(115, 75, 187, 1) 95%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+
+	h1 {
+		font-size: 150px;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	a {
+		display: flex;
+		font-size: 18px;
+		color: #fff;
+		padding: 5px 15px;
+		margin-top: 50px;
+		border: 1px rgba($color: #fff, $alpha: .3) solid;
+		border-radius: 10px;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			border: 1px #fff solid;
+		}
+	}
+}
+
 
 @media (max-width: 767px) {
 	.welcome {
@@ -221,3 +254,4 @@ h1 {
 		}
 	}
 }
+

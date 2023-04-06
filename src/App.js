@@ -6,6 +6,7 @@ import HomePage from "./Pages/HomePage";
 import Speakers from "./Pages/Speakers";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
+import Page404 from "./Pages/404";
 
 function App() {
 	return (
@@ -16,7 +17,9 @@ function App() {
 					<Route path="/speakers" element={<Speakers />} />
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/contact" element={<Contact />} />
+					
 				</Route>
+				<Route path="*" element={<Page404 />} />
 			</Routes>
 		</>
 	);
