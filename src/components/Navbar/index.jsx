@@ -40,7 +40,6 @@ function Navbar() {
 				</div>
 				<ul className={`nav-body ${isActiveBurger === false ? "active" : ""}`}>
 					<li> <Link to='/' onClick={hideMenu}>Home</Link> </li>
-					<li> Pages </li>
 					<li> <Link to='/speakers' onClick={hideMenu}>Speakers</Link> </li>
 					<li> <Link to='/blog' onClick={hideMenu}>Blog</Link> </li>
 					<li> <Link to='/contact' onClick={hideMenu}>Contact</Link> </li>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import PersonCard from "../components/Person-card";
 import Button from "../components/Button";
@@ -61,7 +62,7 @@ function HomePage() {
 
 							<PersonCard sliceObj={6} />
 
-							<a href="/">View all speaker</a>
+							<Link to="/speakers">View all speaker</Link>
 						</div>
 					</div>
 				</section>
