@@ -13,7 +13,7 @@ function HomePage() {
 	return (
 		<>
 			<header className="jc-center">
-				<div className="header-background" style={{ backgroundImage: require('../assets/header-1.jpg') }}></div>
+				<div className="header-background"></div>
 				<div className="container jc-space-between ai-center">
 					<div className="welcome">
 						<div className="welcome__content">
