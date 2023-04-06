@@ -12,11 +12,11 @@ function App() {
 	return (
 		<>
 			<Routes>
-				<Route path="/" element={<Layout />}>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/speakers" element={<Speakers />} />
-					<Route path="/blog" element={<Blog />} />
-					<Route path="/contact" element={<Contact />} />
+				<Route path="/react-confer/" element={<Layout />}>
+					<Route path="/react-confer/" element={<HomePage />} />
+					<Route path="/react-confer/speakers" element={<Speakers />} />
+					<Route path="/react-confer/blog" element={<Blog />} />
+					<Route path="/react-confer/contact" element={<Contact />} />
 					
 				</Route>
 				<Route path="*" element={<Page404 />} />

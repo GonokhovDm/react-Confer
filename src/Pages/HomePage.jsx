@@ -62,7 +62,7 @@ function HomePage() {
 
 							<PersonCard sliceObj={6} />
 
-							<Link to="/speakers">View all speaker</Link>
+							<Link to="/react-confer/speakers">View all speaker</Link>
 						</div>
 					</div>
 				</section>

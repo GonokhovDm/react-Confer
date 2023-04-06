@@ -9,47 +9,47 @@ import './PersonCard.scss'
 
 const personList = [
 	{
-		imgUrl: "./img/photo-1.jpg",
+		imgNumber: "1",
 		name: "Patricia Stanley",
 		title: "Product Lead"
 	},
 	{
-		imgUrl: "./img/photo-2.jpg",
+		imgNumber: "2",
 		name: "Albert Barnes",
 		title: "Founder"
 	},
 	{
-		imgUrl: "./img/photo-3.jpg",
+		imgNumber: "3",
 		name: "Evelyn Stone",
 		title: "Photographer"
 	},
 	{
-		imgUrl: "./img/photo-4.jpg",
+		imgNumber: "4",
 		name: "Evelyn Stone",
 		title: "Photographer"
 	},
 	{
-		imgUrl: "./img/photo-5.jpg",
+		imgNumber: "5",
 		name: "Susan Hopkins",
 		title: "UX Manager"
 	},
 	{
-		imgUrl: "./img/photo-6.jpg",
+		imgNumber: "6",
 		name: "Michael Fowler",
 		title: "Product Designer"
 	},
 	{
-		imgUrl: "./img/photo-4.jpg",
+		imgNumber: "4",
 		name: "Evelyn Stone",
 		title: "Photographer"
 	},
 	{
-		imgUrl: "./img/photo-5.jpg",
+		imgNumber: "5",
 		name: "Susan Hopkins",
 		title: "UX Manager"
 	},
 	{
-		imgUrl: "./img/photo-6.jpg",
+		imgNumber: "6",
 		name: "Michael Fowler",
 		title: "Product Designer"
 	}
@@ -62,7 +62,7 @@ function PersonCard({ sliceObj }) {
 				<div className="col-12 col-lg-4 col-md-6" key={item.index}>
 					<div className="speakings__card">
 						<div className="speakings__card-photo">
-							<img src={item.imgUrl} alt="" />
+							<img src={`${require(`../../../src/assets/photo-${item.imgNumber}.jpg`)}`} alt="" />
 						</div>
 						<div className="speakings__card-contacts">
 							<img src={fbSvg} alt="facebook" />

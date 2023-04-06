@@ -5,7 +5,7 @@ function Page404() {
     <div id="not-found">
         <h1>404</h1>
         <h2>Oops! Page not found.</h2>
-        <Link to='/'>Home</Link>
+        <Link to='/react-confer/'>Home</Link>
     </div>
   )
 }
