@@ -39,10 +39,10 @@ function Navbar() {
 					<span></span>
 				</div>
 				<ul className={`nav-body ${isActiveBurger === false ? "active" : ""}`}>
-					<li> <Link to='/' onClick={hideMenu}>Home</Link> </li>
-					<li> <Link to='/speakers' onClick={hideMenu}>Speakers</Link> </li>
-					<li> <Link to='/blog' onClick={hideMenu}>Blog</Link> </li>
-					<li> <Link to='/contact' onClick={hideMenu}>Contact</Link> </li>
+					<li> <Link to='/react-confer/' onClick={hideMenu}>Home</Link> </li>
+					<li> <Link to='/react-confer/speakers' onClick={hideMenu}>Speakers</Link> </li>
+					<li> <Link to='/react-confer/blog' onClick={hideMenu}>Blog</Link> </li>
+					<li> <Link to='/react-confer/contact' onClick={hideMenu}>Contact</Link> </li>
 					<li>
 						<Button title="Get tickets" />
 					</li>
