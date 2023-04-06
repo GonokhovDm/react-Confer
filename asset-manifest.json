@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-confer/static/css/main.0d5e7cc2.css",
-    "main.js": "/react-confer/static/js/main.53d310c4.js",
+    "main.js": "/react-confer/static/js/main.c9af7379.js",
     "static/media/3.jpg": "/react-confer/static/media/3.fc44c702267e789325ef.jpg",
     "static/media/schedule-3.jpg": "/react-confer/static/media/schedule-3.a4401c393e3cdee2105c.jpg",
     "static/media/schedule-2.jpg": "/react-confer/static/media/schedule-2.11eee3b923054207d092.jpg",
@@ -50,10 +50,10 @@
     "static/media/button-arrow.svg": "/react-confer/static/media/button-arrow.f9b23a6817bdabd24fb8235b1d90d5d1.svg",
     "static/media/check.svg": "/react-confer/static/media/check.3aa17668660f51fb02fc3040436ff3a6.svg",
     "main.0d5e7cc2.css.map": "/react-confer/static/css/main.0d5e7cc2.css.map",
-    "main.53d310c4.js.map": "/react-confer/static/js/main.53d310c4.js.map"
+    "main.c9af7379.js.map": "/react-confer/static/js/main.c9af7379.js.map"
   },
   "entrypoints": [
     "static/css/main.0d5e7cc2.css",
-    "static/js/main.53d310c4.js"
+    "static/js/main.c9af7379.js"
   ]
 }
